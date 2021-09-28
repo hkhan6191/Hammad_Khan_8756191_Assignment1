@@ -14,9 +14,9 @@ white = 8
 black = 9
 
 cost = 9.99
-hst = 0.13
+hst = 1.13
 
-colorinput = int(input("What color shirt would you like?: "))
+colorinput = int(input("What color shirt would you like?: ")) 
 
 if colorinput == blue:
     print("Blue, great choice! ")
@@ -64,6 +64,8 @@ print("Color of shirt: " + str(colorinput))
 print("Type of shirt: " + str(typeinput))
 print("Number of shirts: " + str(numinput))
 
-print("Your total cost today will be: " + str(cost * numinput))
+totalcost = (cost*numinput)
+
+print("Your total cost today will be: %.2f" % (totalcost * hst))
 
 print("Thank you for choosing Abby's Merchandizing today! We hope you enjoyed your shopping experience with us!  ")
